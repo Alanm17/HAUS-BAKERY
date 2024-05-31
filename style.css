@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --main-color: rgb(255, 255, 255);
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: 0.2s all;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.415);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+nav,
+.imgHome {
+  display: flex;
+}
+
+ul {
+  gap: 2rem;
+}
+
+nav {
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.imgHome {
+  justify-content: center;
+  align-items: center;
+}
+
+.imgHome img {
+  width: 70vw;
+}
+.shouldCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: %; */
+}
+h1 {
+  display: flex;
+  font-size: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  transform: translate(20%, -70%);
+  border: 3px solid white;
+  background-color: white;
+}
+.iconhead img {
+  width: 2vw;
+  height: 1.5vw;
+  justify-content: flex-end;
+  margin: -6px;
+  /* padding: 1rem; */
+}
+.item_position {
+  word-spacing: 8px;
+}
+.dots {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  word-spacing: 3rem;
+}
+.hr::before {
+  display: flex;
+  content: "";
+  /* display: block; */
+  border-width: 10px 0 0 0;
+  border-style: dotted;
+  width: 90vw;
+  /* position: absolute; */
+  margin: auto;
+}
+
+*::before,
+::after {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  /* box-sizing: border-box; */
+}
+
+/* next page ++++++++++++++++++++++++*/
+.menu-container {
+  position: relative;
+}
+.ov {
+  max-width: 1440px;
+  /* margin: auto; */
+  max-height: 50vw;
+
+  /* position: relative; */
+}
+
+.bakerymenu {
+  width: 100vw;
+  height: 60vw;
+  margin-bottom: 300px;
+  opacity: 100%;
+  /* margin-top: 40px; */
+  /* object-fit: cover; */
+}
+.bakerymenu {
+  background-image: url("nadya-spetnitskaya-tOYiQxF9-Ys-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(27, 25, 25, 0.107));
+}
+.bakerymenu {
+  /* margin-bottom: 400px; */
+}
+
+.overtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Edu TAS Beginner", cursive;
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3.5rem;
+  box-sizing: border-box;
+}
+.overtext {
+  background-color: rgba(0, 0, 0, 0.19);
+  z-index: 999;
+  zoom: 1;
+  width: 100%;
+  height: 100%;
+}
+.textover {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
