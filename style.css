@@ -241,14 +241,46 @@ src="https://cdn.imweb.me/thumbnail/20230423/ec4e04d1ba2f9.jpg"
   color: #ffffff;
   cursor: pointer;
 }
-.menu-container3 {
-  opacity: 1;
-  transition: opacity 5s ease-in-out 2s; /* Duration added here */
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 30px;
+  font-family: "Farro", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  color: #363636;
+  position: relative;
+  text-transform: uppercase;
 }
-.fade-out {
-  opacity: 0;
+.h2 {
+  position: absolute;
+  left: 13%;
+  color: #715d5d;
+  margin-top: 20px;
+  width: 88%;
+  font-size: 13px;
+  font-family: "Farro", sans-serif;
+  text-transform: uppercase;
 }
-.fade-in{
-  opacity: 1;
-  transition: opacity 5s ease-in-out 2s; /*
+
+.scroll_box {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  overflow: scroll;
+  scroll-timeline: 3s;
+  width: 90vw;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.scroll_Pic img {
+  width: 20vw;
+  height: 20vw;
+  justify-content: center;
+}
+.AJust {
+  display: block;
+  justify-content: center;
 }
