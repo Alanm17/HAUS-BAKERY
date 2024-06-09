@@ -268,19 +268,26 @@ src="https://cdn.imweb.me/thumbnail/20230423/ec4e04d1ba2f9.jpg"
 .scroll_box {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  /* align-items: center;  */
   overflow: scroll;
   scroll-timeline: 3s;
-  width: 90vw;
-  margin-top: 100px;
-  margin-left: 70px;
+  width: 60vw;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  /* border-left: 6rem solid black; */
+  cursor: pointer;
+  /* overflow: hidden; */
 }
 .scroll_Pic img {
-  width: 20vw;
-  height: 20vw;
+  width: 17vw;
+  height: 13vw;
   justify-content: center;
+  padding: 0.2rem;
 }
-.AJust {
-  display: block;
-  justify-content: center;
+.right_scroll {
+  /* display: block;
+  box-sizing: border-box;
+  width: 1vw; */
+}
+.left_scroll {
 }
