@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollableRow = document.querySelector(".scroll_box");
   let scrollInterval;
   let isUserScrolling = false;
-  let autoScrollSpeed = 50; // Pixels to scroll per tick
+  let autoScrollSpeed = 1000; // Pixels to scroll per tick
 
   // Function to start the auto-scroll
   function startAutoScroll() {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     scrollInterval = setInterval(() => {
       scrollableRow.scrollLeft += autoScrollSpeed;
-    }, 200); // Adjust the interval as needed
+    }, 100); // Adjust the interval as needed
   }
 
   // Function to stop the auto-scroll
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       isUserScrolling = false;
       startAutoScroll();
-    }, 1000); // 3 seconds delay before restarting auto-scroll
+    }, 3000); // 3 seconds delay before restarting auto-scroll
   });
 
   // Initial call to start auto-scrolling
