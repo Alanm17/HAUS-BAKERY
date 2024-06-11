@@ -93,12 +93,17 @@ nav {
   position: absolute;
   bottom: 20%;
   left: 6%;
-  width: 40%;
+  width: 35%;
   color: white;
   font-size: 50px;
-  /* background-color: none */
-  /* color:white */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+ font-weight: normal;
 }
+.element p{
+  font-weight: 100;
+  font-size: 40px;
+}
+
 
 .shouldCenter {
   display: flex;

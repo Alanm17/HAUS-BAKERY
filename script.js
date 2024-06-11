@@ -1,10 +1,8 @@
-//
 document.addEventListener("DOMContentLoaded", function () {
   const scrollableRow = document.querySelector(".scroll_box");
   let scrollInterval;
   let isUserScrolling = false;
-  let autoScrollSpeed = 1000; // Pixels to scroll per tick (set to 1 for smooth effect)
-  const autoScrollInterval = 10; // Interval in ms for smooth scrolling
+  let autoScrollSpeed = 1000; // Pixels to scroll per tick
 
   // Function to start the auto-scroll
   function startAutoScroll() {
@@ -13,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     scrollInterval = setInterval(() => {
       scrollableRow.scrollLeft += autoScrollSpeed;
-    }, autoScrollInterval);
+    }, 100); // Adjust the interval as needed
   }
 
   // Function to stop the auto-scroll
@@ -35,29 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial call to start auto-scrolling
   startAutoScroll();
-
-  // Adding event listeners to the left scroll button(s)
-  const leftButtons = document.getElementsByClassName("scroll_left");
-  for (let btn of leftButtons) {
-    btn.addEventListener("click", function () {
-      scrollableRow.scrollBy({
-        left: -200, // Adjust this value for the desired scroll amount
-        behavior: "smooth",
-      });
-    });
-  }
-
-  // Adding event listeners to the right scroll button(s)
-  const rightButtons = document.querySelector(".scroll_right");
-  for (let btn of rightButtons) {
-    btn.addEventListener("click", function () {
-      scrollableRow.scrollBy({
-        left: 200, // Adjust this value for the desired scroll amount
-        behavior: "smooth",
-      });
-    });
-  }
 });
+
+document
+  .getElementsByClassName("scroll-left")
+  .addEventListener("click", function () {
+    document.getElementById("gallery").scrollBy({
+      left: -200, // Adjust this value for the desired scroll amount
+      behavior: "smooth",
+    });
+  });
+
+document
+  .getElementsByClassName("scroll-right")
+  .addEventListener("click", function () {
+    document.getElementById("gallery").scrollBy({
+      left: 200, // Adjust this value for the desired scroll amount
+      behavior: "smooth",
+    });
+  });
 
 // document.addEventListener('DOMContentLoaded',function{
 //   const backVid = document.querySelector("video");
@@ -72,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   }
 // })
 
-  /* <script>
+/* <script>
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -90,4 +84,3 @@ function myFunction() {
   }
 }
 </script> */
-}
