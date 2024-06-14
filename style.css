@@ -1,19 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-:root {
-  --main-font: "Poppins", sans-serif;
-  --main-color: rgb(255, 255, 255);
+  box-sizing: border-box;
 }
 html,
 body {
-  /* margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%; */
   overflow-x: hidden;
+}
+:root {
+  --main-font: "Poppins", sans-serif;
+  --main-color: rgb(255, 255, 255);
 }
 
 body,
@@ -56,38 +52,19 @@ nav {
   font-style: normal;
   text-transform: uppercase;
 }
-
-/* .imgHome { */
-/* justify-content: center;
-  align-items: center; */
-/* background-color: rgba(0, 0, 0, 0.19); */
-/* } */
-/* background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
-    url("https://img.freepik.com/free-photo/medium-shot-happy-man-eating_23-2148972801.jpg?w=2000");
-  background-size: cover;
-  background-position: center; */
 .imgHome {
   width: 100%;
   height: 48vw;
-  background-image:linear-gradient(
-    to right,
-    rgb(0, 0, 0),
-    rgb(0, 0, 0,0)
-  ), url('bread.jpg') ;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0)),
+    url("bread.jpg");
   background-size: cover;
   margin-bottom: 50px;
-  background-position: center; 
-  /* box-shadow: #060606 3px; */
+  background-position: center;
   text-shadow: 30px;
 }
-.textoverimg h1 p{
+.textoverimg h1 p {
   position: relative;
   text-align: center;
-  /* color: white; */
 }
 .element {
   position: absolute;
@@ -97,18 +74,18 @@ nav {
   color: white;
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
- font-weight: normal;
+  font-weight: normal;
 }
-.element p{
+.element p {
   font-weight: 100;
   font-size: 40px;
 }
-
 
 .shouldCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+
   /* opacity: %; */
 }
 h1 {
@@ -146,16 +123,8 @@ h1 {
   border-width: 10px 0 0 0;
   border-style: dotted;
   width: 90vw;
-  /* position: absolute; */
   margin: auto;
-}
-
-*::before,
-::after {
-  border-width: 1px;
-  border-style: solid;
   border-color: #e5e7eb;
-  /* box-sizing: border-box; */
 }
 
 /* next page ++++++++++++++++++++++++*/
@@ -168,21 +137,19 @@ h1 {
   /* position: relative; */
 }
 
-.bakerymenu video {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    )
+.bakerymenu video source {
   background-size: cover;
   background-position: center;
   display: block;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  /* border-right: solid 6000px white; */
-  margin-bottom: 30px;
+  align-items: center; */
+  /* width: 100vh;
+  height: 50vh; 
+  margin-top: 7rem;
+}
+.bakery-video {
+  max-width: 80%;
+  max-height: 50%;
 }
 
 .overtext {
@@ -234,14 +201,6 @@ h1 {
   top: 50%;
   right: 50%;
 }
-/* https://cdn.imweb.me/thumbnail/20240319/f793c60ee7c5d.jpg
-src="https://cdn.imweb.me/thumbnail/20240319/f793c60ee7c5d.jpg"
-https://cdn.imweb.me/thumbnail/20220703/ac9ebb5c3c13d.jpg
-https://cdn.imweb.me/thumbnail/20230315/a7a829416b4f1.jpg
-src="https://cdn.imweb.me/thumbnail/20230315/a7a829416b4f1.jpg"
-src="https://cdn.imweb.me/thumbnail/20230318/2047c3ee1b9a3.jpg"
-src="https://cdn.imweb.me/thumbnail/20210205/23fd2949e8d1c.jpg"
-src="https://cdn.imweb.me/thumbnail/20230423/ec4e04d1ba2f9.jpg"
 
 /* css grid*/
 
@@ -265,7 +224,6 @@ src="https://cdn.imweb.me/thumbnail/20230423/ec4e04d1ba2f9.jpg"
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: 3px solid black; */
   width: 140px;
   font-style: normal;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -338,35 +296,13 @@ src="https://cdn.imweb.me/thumbnail/20230423/ec4e04d1ba2f9.jpg"
 .scroll_box {
   display: flex;
   justify-content: center;
-  /* align-items: center;  */
-  /* overflow: scroll; */
-  /* scroll-behavior: smooth; */
-  /* scroll-timeline: 3s; */
   width: 80%;
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
-  /* position: relative; */
   margin-top: 10rem;
   margin-left: 8rem;
-  /* border-left: 6rem solid black; */
-  /* cursor: pointer; */
-  /* margin-bottom: 20rem; */
-  /* overflow: hidden; */
-  /* position: relative; */
 }
-
-/* .AJust {
-  position: relative;
-} */
-/* .right_scroll {
-  position: absolute;
-  top: 40%;
-  left: 10%; 
-}
-.left_scroll {
-  margin-left: 1000px;
-} */
 .scroll_img {
   width: 30%;
   height: 40%;
